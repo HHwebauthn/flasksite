@@ -207,7 +207,10 @@ figure {
 /**
  * Address differences between Firefox and other browsers.
  */
+li {
 
+  background-color: #78FF78;
+}
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;

@@ -11,8 +11,17 @@ Flasksight
             <p>This is my demo of a websight using python flask. 
         </header>
         <section>
-            <h2>Good Vibrations</h2>
-            <p>Place holder</p>
+            <h2>Recently Added</h2>
+            {% if new_bookmarks %}
+                <ul>
+                {% for bm in new_bookmarks %}
+                    <li>{{ bm.user }} added <a href="{{ bm.url }}"><{{ bm.url }}</a></li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                no bookmarks yet.
+            {% endif %}
+            <p>Link</p>
         </section>
         <section>
             <h2>Im enjoying this too much</h2>
