@@ -1,11 +1,20 @@
-from app import app
+
+import os
 from flask import Flask, render_template, url_for, request, redirect, flash
 from datetime import datetime
 from logging import DEBUG
 from forms import BookmarkForm
+from flask_sqlalchemy import SQLAlchemy 
 
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app = Flask(__name__)
 bookmarks = []
+
 app.config['SECRET_KEY'] = b'I\x97r\x9e\xd2\xe5\xf6\xd7\x07\x84B\x17D\x04^\xd1\x17O\xd2\xb2cI2\xaa'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite///' + os.path.join(basedir, 'flasksite.db')
+db = SQLAlchemy(app)
+
 def store_bookmark(url):
 	bookmarks.append(dict(
 		url = url,
@@ -27,7 +36,7 @@ def add():
 	if form.validate_on_submit():
 		url = form.url.data
 		description = form.description.data
-		store_bookmark(url, description)
+		store_bookmark(url)
 		flash("Stored '{}'".format(description))
 		return redirect(url_for('index'))
 	return render_template('add.html', form=form)
