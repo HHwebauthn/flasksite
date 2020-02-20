@@ -1,0 +1,41 @@
+body {
+	background-color: #34495E;
+	font-family: sans-serif;
+	background-image: url(../image/cccc.PNG)
+}
+
+
+h1, h2 {
+	color: #FBE004 ;
+}
+
+h2{
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	font-size: 300%;
+}
+
+img {
+	border: solid #FBE004  10px;
+	margin: auto;
+	display: block;
+}
+
+p {
+	color: #FBE004 ;
+	text-align: center;
+}
+
+ol {
+	color: #FBE004 ;
+	text-align: center;
+}
+button {
+	background-color: #FBE004 ;
+	border-radius: 20%;
+	display: block;
+	margin: auto;
+}
