@@ -1,3 +1,6 @@
+due to school all progess hass been postpone till summer.
+
+
 To use this on localhost follow the steps below.
 
 Make a virtual environment.
