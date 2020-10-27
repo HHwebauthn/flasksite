@@ -1,6 +1,6 @@
 cffi==1.7.0
 click==6.6
-cryptography==1.4
+cryptography==3.2
 Flask>=0.12.3
 Flask-FIDO-U2F==0.4.4
 Flask-SQLAlchemy==2.1
