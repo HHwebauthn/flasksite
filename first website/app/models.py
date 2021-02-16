@@ -6,8 +6,8 @@ from sqlalchemy.sql.expression import select, exists
 import json
 from werkzeug.security import generate_password_hash, check_password_hash
 
-#app = Flask(__name__) #I have this commited out so I can create a data base 
-#db = SQLAlchemy(app)
+# app = Flask(__name__) #I have this commited out so I can create a data base 
+# db = SQLAlchemy(app)
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] =  'sqlite:///C:/Users/hunte/git/FIDO/pythonfido2/app/FIDO.db'
