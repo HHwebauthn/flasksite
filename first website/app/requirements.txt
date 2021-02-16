@@ -6,7 +6,7 @@ Flask-FIDO-U2F==0.4.4
 Flask-SQLAlchemy==2.1
 idna==2.1
 itsdangerous==0.24
-Jinja2==2.8
+Jinja2==2.10.1
 MarkupSafe==0.23
 pyasn1==0.1.9
 pycparser==2.14
